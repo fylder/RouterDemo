@@ -11,7 +11,6 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import fylder.annotation.Test;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,8 +40,4 @@ public class MainActivity extends AppCompatActivity {
                 .navigation(this, 100);
     }
 
-    @Test("test")
-    public void test() {
-
-    }
 }

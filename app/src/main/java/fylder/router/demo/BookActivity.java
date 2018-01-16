@@ -11,8 +11,9 @@ import com.alibaba.android.arouter.launcher.ARouter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import fylder.router.demo.config.Extras;
 
-@Route(path = "/fylder/router/demo/BookActivity", name = "book", priority = 2, extras = 2)
+@Route(path = "/fylder/router/demo/BookActivity", name = "book", priority = 2, extras = Extras.USER)
 public class BookActivity extends AppCompatActivity {
 
     @Autowired
