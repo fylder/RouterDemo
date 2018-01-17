@@ -25,7 +25,7 @@ public class LoginInterceptor implements IInterceptor {
         if (postcard.getExtra() != Extras.LOGIN && !BookConfig.hasLogin) {
             //跳转登录界面
             ARouter.getInstance()
-                    .build("/fylder/router/demo/LoginActivity")
+                    .build("/app/LoginActivity")
                     .withString("ahh", "this is a value").navigation();
             callback.onInterrupt(null); //终止拦截
         } else {

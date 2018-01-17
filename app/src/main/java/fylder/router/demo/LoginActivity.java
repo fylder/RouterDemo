@@ -11,7 +11,7 @@ import butterknife.OnClick;
 import fylder.router.demo.config.BookConfig;
 import fylder.router.demo.config.Extras;
 
-@Route(path = "/fylder/router/demo/LoginActivity", name = "login", priority = 2, extras = Extras.LOGIN)
+@Route(path = "/app/LoginActivity", name = "login", priority = 2, extras = Extras.LOGIN)
 public class LoginActivity extends AppCompatActivity {
 
     @Override
@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     void toBook() {
         BookConfig.hasLogin = true;
         ARouter.getInstance()
-                .build("/fylder/router/demo/BookActivity")
+                .build("/app/BookActivity")
                 .withString("ahh", "from LoginActivity")
                 .navigation();
         finish();

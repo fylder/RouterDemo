@@ -26,7 +26,7 @@ public class DemoInterceptor implements IInterceptor {
         if (postcard.getExtra() != Extras.LOGIN && postcard.getExtra() != Extras.WECHAT && !BookConfig.hasBind) {
             //跳转登录界面
             ARouter.getInstance()
-                    .build("/fylder/router/demo/WeChatActivity")
+                    .build("/app/WeChatActivity")
                     .withString("ahh", "this is a value").navigation();
             callback.onInterrupt(null);
         } else {

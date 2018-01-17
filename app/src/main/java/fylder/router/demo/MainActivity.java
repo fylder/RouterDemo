@@ -34,10 +34,14 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.main_btn)
     void onClickRouter() {
+//        ARouter.getInstance()
+//                .build("/app/BookActivity")
+//                .withString("ahh", "this is a value")
+//                .navigation(this, 100);
         ARouter.getInstance()
-                .build("/fylder/router/demo/BookActivity")
+                .build("/lib/LibraryActivity")
                 .withString("ahh", "this is a value")
-                .navigation(this, 100);
+                .navigation();
     }
 
 }
